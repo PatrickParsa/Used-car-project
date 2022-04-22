@@ -25,7 +25,7 @@ def predict():
         try:
             int(request.form['Mileage'])
         except:
-            return render_template('index.html', prediction_text="Please enter a valid number for mileage (no commas)")
+            return render_template('index.html', prediction_text="Please enter a valid number for mileage")
         else:
             Year = int(request.form['Year'])
             age = 2022 - Year
